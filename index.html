@@ -14,32 +14,444 @@
         <p>Release on version 2024</p>
       </div>
       <div>
-        <div>
-          <a href="#" class="text--black divider--grey--right">En</a>
-          <a href="#" class="text--grey">De</a>
+        <div class="lang-options">
+          <a href="#" class="lang-options__item">EN</a>
+          <a href="#" class="lang-options__item">DE</a>
         </div>
-        <button>Join Waitlist</button>
+        <button class="btn btn--black">Join Waitlist</button>
       </div>
     </header>
-    <div class="flex--column--center">
-      <section>
-        <h1>
+    <div class="container">
+      <section class="hero">
+        <h1 class="hero__title">
           Your
-          <span>fitness</span> and <span>social</span> companion
+          <span class="chip chip--light-green">fitness</span> and
+          <span class="chip chip--purple">social</span> companion
         </h1>
-        <p class="max-width--996 font--32">
+        <p class="hero__p">
           Welcome to Voum - a powerful platform to customize and track your
           workouts, challenge friends, and discover your best self.
         </p>
-        <div class="flex--space-between bg--white p--10--20 border--100">
-          <p class="max-width--445">
+        <div class="hero__waitlist">
+          <p class="hero__p">
             Join the waiting list and enjoy
-            <span class="weight--700">3 months of free</span>, exclusive access
-            upon your first login.
+            <b>3 months of free</b>,<br />exclusive access upon your first
+            login.
           </p>
-          <button class="button--simple--black">
-            <span>Join Waitlist</span>
+          <button class="btn btn--black btn--medium">
+            <div class="btn-content">
+              <span>
+                <svg
+                  fill="#ffffff"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  data-name="Layer 9"
+                  id="Layer_9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title></title>
+                    <path
+                      d="M16,1.5A14.5,14.5,0,1,0,30.5,16,14.52,14.52,0,0,0,16,1.5Zm0,28A13.5,13.5,0,1,1,29.5,16,13.52,13.52,0,0,1,16,29.5Z"
+                    ></path>
+                    <ellipse cx="4.06" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="4.07" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="27.94" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="27.93" rx="0.94" ry="0.93"></ellipse>
+                    <path
+                      d="M16.5,15.77V6.86a0.5,0.5,0,0,0-1,0V16a0.5,0.5,0,0,0,.18.38l5,4.21a0.5,0.5,0,0,0,.64-0.77Z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span>Join Waitlist</span>
+            </div>
           </button>
+        </div>
+
+        <div class="hero__images">
+          <img
+            src="./favorites.png"
+            class="hero__images__item hero__images__item--left"
+            height="262px"
+            style="border-radius: 32px"
+            alt=""
+          />
+          <img
+            src="./mobile-app.png"
+            class="hero__images__item hero__images__item--center"
+            height="570px"
+            alt=""
+          />
+          <div class="hero__images__item hero__images__item--right">
+            <img src="./exercises.svg" alt="" />
+            <img src="./chart.svg" height="207px" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="box card--dark-grey">
+          <div class="card__info">
+            <h2 class="card__title">
+              Say hello to your new
+              <span class="card__title__span--green">superpower</span>
+            </h2>
+            <p class="card__p">
+              Create custom workouts, add your own exercises, challenge your
+              friends and interact with a global community. VOUM arms you with
+              the power to fight stress, fatigue and lack of focus.
+            </p>
+          </div>
+          <img src="./running.png" alt="" class="card__image" />
+        </div>
+      </section>
+
+      <section>
+        <div class="box card--white">
+          <h2 class="card__title">How does VOUM work?</h2>
+          <div class="card__content">
+            <div class="card__content__item">
+              <img src="./workouts.png" width="400px" alt="" />
+              <p>
+                Add your custom exercise or explore our extensive library to
+                design a personalized workout
+              </p>
+            </div>
+          </div>
+
+          <div class="card__content">
+            <div class="card__content__item">
+              <p>Track your progress and reach the top of the scoreboard</p>
+              <img src="./statics.png" width="400px" alt="" />
+            </div>
+          </div>
+
+          <div class="card__content">
+            <div class="card__content__item">
+              <img src="./participants.png" width="400px" alt="" />
+              <p>
+                Create your own challenges, or join others for a little friendly
+                competition
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="header__h2">
+          Backed by <span class="chip chip--dark-grey">experts</span>, powered
+          by <span class="chip chip--purple">people</span> like you. VOUM lets
+          you rebuild your
+          <span class="chip chip--light-green">health</span> and
+          <span class="chip chip--orange">happiness</span> from the inside out.
+        </h2>
+      </section>
+
+      <section>
+        <div class="box card--light-green">
+          <div class="card__info">
+            <h2 class="card__title">
+              Get your 3-month <span class="chip chip--purple">free</span> trial
+              today
+            </h2>
+            <p class="card__p">
+              We're confident you'll love VOUM app! Join the waitlist before the
+              launch date and get <b>3 months of free</b> access upon your first
+              login.
+            </p>
+            <button class="btn btn--black btn--medium">
+              <div class="btn-content">
+                <span>
+                  <svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 32 32"
+                    data-name="Layer 9"
+                    id="Layer_9"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title></title>
+                      <path
+                        d="M16,1.5A14.5,14.5,0,1,0,30.5,16,14.52,14.52,0,0,0,16,1.5Zm0,28A13.5,13.5,0,1,1,29.5,16,13.52,13.52,0,0,1,16,29.5Z"
+                      ></path>
+                      <ellipse cx="4.06" cy="16" rx="0.94" ry="0.93"></ellipse>
+                      <ellipse cx="16" cy="4.07" rx="0.94" ry="0.93"></ellipse>
+                      <ellipse cx="27.94" cy="16" rx="0.94" ry="0.93"></ellipse>
+                      <ellipse cx="16" cy="27.93" rx="0.94" ry="0.93"></ellipse>
+                      <path
+                        d="M16.5,15.77V6.86a0.5,0.5,0,0,0-1,0V16a0.5,0.5,0,0,0,.18.38l5,4.21a0.5,0.5,0,0,0,.64-0.77Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+                <span>Join Waitlist</span>
+              </div>
+            </button>
+            <p class="subtitle">Pricing coming soon</p>
+          </div>
+          <img src="./price.png" alt="" class="card__image" />
+        </div>
+      </section>
+
+      <section class="box--horizontal">
+        <div class="box__content--align-left">
+          <h2 class="box__title box__title--dark-grey">
+            Track your progress.<br />Reward your wins.
+          </h2>
+          <p class="box__p--small">
+            VOUM gives you customisable tracking, so you can monitor the things
+            that matter most. See your achievements, celebrate your successes,
+            and see how you can improve.
+          </p>
+          <button class="btn btn--black btn--medium">
+            <div class="btn-content">
+              <span>
+                <svg
+                  fill="#ffffff"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  data-name="Layer 9"
+                  id="Layer_9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title></title>
+                    <path
+                      d="M16,1.5A14.5,14.5,0,1,0,30.5,16,14.52,14.52,0,0,0,16,1.5Zm0,28A13.5,13.5,0,1,1,29.5,16,13.52,13.52,0,0,1,16,29.5Z"
+                    ></path>
+                    <ellipse cx="4.06" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="4.07" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="27.94" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="27.93" rx="0.94" ry="0.93"></ellipse>
+                    <path
+                      d="M16.5,15.77V6.86a0.5,0.5,0,0,0-1,0V16a0.5,0.5,0,0,0,.18.38l5,4.21a0.5,0.5,0,0,0,.64-0.77Z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span>Join Waitlist</span>
+            </div>
+          </button>
+        </div>
+        <img src="./progress.png" width="440px" alt="" />
+      </section>
+
+      <section class="box box--dark-grey">
+        <div class="box__content--row">
+          <h2 class="box__title">All in one place.<br />All on-demand.</h2>
+          <p class="box__p--small">
+            Explore our exercise library with filtered options, video tutorials,
+            and personal tips for your best workout. Or just add your own
+            preferred exercises. Let yourself be inspired!
+          </p>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel carousel--top">
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chispan">Elastic</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Back</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Core</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Legs</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Arms</span>
+            </div>
+          </div>
+          <div class="carousel carousel--bottom">
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Cardio</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-8.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Strength</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-10.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Explosive Power</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-11.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track carousel__item">
+              <span class="carousel__item__chip">Injury Prevention</span>
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-12.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel__track">
+              <img
+                class="carousel__item__img"
+                src="./moving-img-13.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box--horizontal">
+        <div class="box__content--align-left">
+          <h2 class="box__title box__title--dark-grey">
+            Get competitive<br />with new-found<br />friends
+          </h2>
+          <p class="box__p--small">
+            Сreate fun exercise-based challenges and go head-to-head with your
+            friends! We believe that the idea of "winning" is an incredible
+            motivator to help you push your limits when it comes to physical.
+          </p>
+          <button class="btn btn--black btn--medium">
+            <div class="btn-content">
+              <span>
+                <svg
+                  fill="#ffffff"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  data-name="Layer 9"
+                  id="Layer_9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title></title>
+                    <path
+                      d="M16,1.5A14.5,14.5,0,1,0,30.5,16,14.52,14.52,0,0,0,16,1.5Zm0,28A13.5,13.5,0,1,1,29.5,16,13.52,13.52,0,0,1,16,29.5Z"
+                    ></path>
+                    <ellipse cx="4.06" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="4.07" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="27.94" cy="16" rx="0.94" ry="0.93"></ellipse>
+                    <ellipse cx="16" cy="27.93" rx="0.94" ry="0.93"></ellipse>
+                    <path
+                      d="M16.5,15.77V6.86a0.5,0.5,0,0,0-1,0V16a0.5,0.5,0,0,0,.18.38l5,4.21a0.5,0.5,0,0,0,.64-0.77Z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span>Join Waitlist</span>
+            </div>
+          </button>
+        </div>
+        <img src="./friends.png" width="440px" alt="" />
+      </section>
+
+      <section class="advantages">
+        <div class="advantages-content">
+          <div class="advantages__header"></div>
+          <div class="advantages__items"></div>
         </div>
       </section>
     </div>
