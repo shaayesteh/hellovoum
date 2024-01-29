@@ -167,7 +167,7 @@ header {
 }
 
 .features {
-  max-width: 1360px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   background-color: var(--dark-grey);
@@ -486,6 +486,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+  cursor: pointer;
+
+  h3 {
+    margin: 0;
+  }
 }
 
 .faq__item__title {
@@ -494,17 +500,38 @@ header {
 }
 
 .faq__item__details {
-  display: none;
   font-size: 1.5rem;
-  line-height: 126%;
+  line-height: 165%;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
 }
 
-.show {
+.faq__item__details::before {
+  content: "";
+  height: 47px;
+  position: relative;
   display: block;
 }
 
-.hide {
-  display: none;
+.faq__item__details.open {
+  max-height: 240px;
+}
+
+.chevron svg {
+  transition: transform 1s ease-out;
+}
+
+.chevron.open svg {
+  transform: rotateY(180deg);
+}
+
+.single-title-btn {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 90%;
+  text-align: center;
 }
 
 .chip {
@@ -531,6 +558,11 @@ header {
 .chip--orange {
   background-color: var(--orange);
   color: var(--white);
+}
+
+.chip--colorful {
+  background-image: url(./bg-img.jpg);
+  background-size: cover;
 }
 
 .subtitle {
