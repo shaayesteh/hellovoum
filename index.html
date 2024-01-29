@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
 
     <title>VOUM</title>
   </head>
@@ -993,30 +1000,95 @@
         </div>
       </section>
 
-      <section>
+      <section class="align-center">
         <h2 class="single-title-btn">
           It's time to ignite
-          <span class="chip chip--colorful">your</span> energy
+          <br /><span class="chip chip--colorful">your</span> energy
         </h2>
+        <button class="btn btn--black btn--medium">
+          <div class="btn-content">
+            <span>
+              <svg
+                fill="#ffffff"
+                width="24px"
+                height="24px"
+                viewBox="0 0 32 32"
+                data-name="Layer 9"
+                id="Layer_9"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title></title>
+                  <path
+                    d="M16,1.5A14.5,14.5,0,1,0,30.5,16,14.52,14.52,0,0,0,16,1.5Zm0,28A13.5,13.5,0,1,1,29.5,16,13.52,13.52,0,0,1,16,29.5Z"
+                  ></path>
+                  <ellipse cx="4.06" cy="16" rx="0.94" ry="0.93"></ellipse>
+                  <ellipse cx="16" cy="4.07" rx="0.94" ry="0.93"></ellipse>
+                  <ellipse cx="27.94" cy="16" rx="0.94" ry="0.93"></ellipse>
+                  <ellipse cx="16" cy="27.93" rx="0.94" ry="0.93"></ellipse>
+                  <path
+                    d="M16.5,15.77V6.86a0.5,0.5,0,0,0-1,0V16a0.5,0.5,0,0,0,.18.38l5,4.21a0.5,0.5,0,0,0,.64-0.77Z"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            <span>Join Waitlist</span>
+          </div>
+        </button>
       </section>
+
+      <footer class="footer">
+        <div class="footer__item footer__nav__container">
+          <div>
+            <a href="#"
+              ><img src="./colorful-logo.png" width="193px" alt=""
+            /></a>
+          </div>
+          <ul class="footer__nav">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Manage Cookie Settings</a></li>
+            <li><a href="#">Legal Notice</a></li>
+          </ul>
+          <p class="footer__copyright">&copy; VOUM 2024</p>
+        </div>
+        <div class="footer__item footer__contact">
+          <h3 class="footer__contact__title">We're here to help</h3>
+          <p class="footer__contact__p">
+            If there's anything you need to know that's not covered on our
+            website, then please get in touch.
+          </p>
+          <div class="btn btn--green">
+            <a href="mailto:info@hellovoum.com">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script>
-      let currentDetails = null;
+      let openDetails = null;
 
       function toggleDetails(header) {
         let details = header.nextElementSibling;
         let chevron = header.querySelector(".chevron");
 
-        if (currentDetails && currentDetails !== details) {
-          // Close the previously opened details
-          currentDetails.classList.remove("open");
+        if (openDetails && openDetails !== details) {
+          openDetails.classList.remove("open");
         }
 
         chevron.classList.toggle("open");
         details.classList.toggle("open");
 
-        currentDetails = details;
+        openDetails = details;
       }
     </script>
   </body>

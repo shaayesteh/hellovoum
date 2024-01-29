@@ -12,8 +12,8 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #efeef0;
-  padding-bottom: 20rem;
   color: var(--dark-grey);
+  margin-bottom: 0;
 }
 
 a {
@@ -78,6 +78,23 @@ header {
   background-color: #fff;
   color: black;
   border: 1px solid var(--light-grey);
+}
+
+.btn--green a {
+  background-color: var(--primary-color);
+  color: var(--dark-grey);
+  min-width: 160px;
+  padding: 20px 40px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 45px;
+  border-radius: 32px;
+  transition: 0.5s ease-in-out;
+}
+
+.btn--green a:hover {
+  background-color: rgba(205, 243, 72, 0.7);
 }
 
 .btn--medium {
@@ -528,10 +545,71 @@ header {
 }
 
 .single-title-btn {
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 90%;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 120%;
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+  padding: 80px 80px 0 80px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border-radius: 60px 60px 0 0;
+}
+
+.footer__item {
+  max-width: 600px;
+}
+
+.footer__nav__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin-top: 60px;
+
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+  }
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__contact__title {
+  font-size: 44px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer__contact__p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 386px;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chip {
@@ -563,6 +641,8 @@ header {
 .chip--colorful {
   background-image: url(./bg-img.jpg);
   background-size: cover;
+  background-position: center;
+  padding-inline: 25px;
 }
 
 .subtitle {
